@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+    /* إضافة انتقال سلس للصور */
+    .carousel-item {
+        transition: opacity 1s ease-in-out;
+    }
+
+    /* كلاس للصورة النشطة */
+.active-slide {
+    transform: scale(1.05); /* تكبير الصورة */
+    width: 25px;
+    background-color: aquamarine;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير الانتقال */
+}
